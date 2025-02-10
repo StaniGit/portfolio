@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 
 // Vérifier le jeton CSRF
@@ -27,4 +28,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header('Location: ../index.php');
     exit();
 }
+ob_end_flush();
 ?>
