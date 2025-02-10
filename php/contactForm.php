@@ -4,7 +4,7 @@ require_once __DIR__ . '/config/Database.php';
 
 class ContactForm {
     private $conn;
-    private $table_name = "contacts"; // Nom de la table dans la base de données
+    private $table_name = "contacts";
 
     public $name;
     public $email;
