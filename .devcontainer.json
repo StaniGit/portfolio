@@ -1,0 +1,13 @@
+{
+  "name": "PHP Development",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "settings": {
+      "php.executablePath": "/usr/bin/php"
+  },
+  "extensions": [
+      "bmewburn.vscode-intelephense-client"
+  ],
+  "forwardPorts": [8080],
+  "postCreateCommand": "composer install" 
+}
